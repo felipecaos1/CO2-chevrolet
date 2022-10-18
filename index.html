@@ -1,0 +1,959 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Travesía Carbono Cero</title>
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="icon" href="./img/logo-carbono-neutro.png">
+
+    <!-- insertar bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="./css/bootstrap.min.css"
+      crossorigin="anonymous"
+    />
+    <meta property="og:title" content="Carbono Neutro Caminos - Dejemos juntos una mejor huella"/>
+    <meta property="og:description" content="En caminos sabemos que cuidar el planeta es una tarea de todos. Por eso te invitamos a que descubras que tanto contribuyen tus acciones al cambio climatico y cómo juntos podremos mitigar nuestro imparco.">
+    <meta property="og:image" content="https://carbononeutro.caminos.com.co/img/banner-carbon-neutro-chevrolet.jpg"/>
+    <meta property="og:url" content="https://carbononeutro.caminos.com.co/">
+    <meta property="og:type" content="landing">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-135869004-24"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-135869004-24');
+    </script>
+
+  </head>
+  <body>
+    <div class="container-fluid" id="modal">
+      <div class="con-modal">
+         <div class="modal-text">
+           <p>GRACIAS POR SUMARTE<br>A NUESTRA CAMPAÑA.</p>
+           <P>PRONTO RECIBIRÁS<br>NUESTRA INVITACION A<br>LA PRIMERA TRAVESIA</P>
+         </div>
+         <div class="modal-logo">
+           <img src="img/img-negro-carbono.png" alt="">
+         </div>
+      </div>
+    </div>
+    <div class="container-fluid" id="cont-principal" >
+      <img id="nube" src="img/nube.png" alt="">
+      <div class="container" id="cont-sub">
+        <div class="row align-items-center animacion" id="title-logo">
+          <div class="col-7 l-title">
+            <h3>
+              DEJEMOS JUNTOS<br />
+              UNA MEJOR <span style="color: #c6d900">HUELLA</span>
+            </h3>
+          </div>
+          <div class="col-5 text-end l-logo">
+            <img src="img/logo-carbono-neutro.png" alt="" />
+          </div>
+        </div>
+             <!-- Slide 1 -->
+        <div class="row slide-1" id="slide-1">
+            <div class="row slide-info">
+              <div class="col">
+                <p>En Caminos Sabemos que Cuidar el planeta es una tarea de
+                  todos.
+                </p>
+                <p>Por eso te invitamos a que descubras qué tanto contribuyen tus
+                  acciones al cambio climático y cómo juntos podremos mitigar
+                  nuestro impacto.
+                </p>
+                <div>
+                <button  id="comienza-test">COMIENZA EL TEST</button>
+                </div>
+              </div>
+            </div>
+            <div class="row slide-navigation">
+              <img src="img/logo-chevrolet.png" alt="" />
+            </div>
+        </div>
+          <!-- end slide 1 -->
+        
+        <div class="row" id="sliders">
+          <!-- Slide 2 pregunta HOGAR  -->
+          <div class="slide-2 slide active-slide" id="slide-2">
+            <div class="slide-info">
+              <div class="info-left">
+                <img class="logo-slide" src="img/hogar.svg" alt="" />
+                <h3 class="title-logo">HOGAR</h3>
+              </div>
+              <div class="info-right">
+                <div class="pregunta">
+                  <h4>¿A qué estrato socioeconómico perteneces actualmente?</h4>
+                </div>
+                <div class="row respuestas">
+                  <div class="col-6">
+                    <div>
+                      <label
+                        ><input type="radio" name="estrato" value="125.2" />Estrato
+                        1</label
+                      >
+                    </div>
+                    <div>
+                      <label
+                        ><input type="radio" name="estrato" value="124.7" />Estrato
+                        2</label
+                      >
+                    </div>
+                    <div>
+                      <label
+                        ><input type="radio" name="estrato" value="148.2" />Estrato
+                        3</label
+                      >
+                    </div>
+                  </div>
+                  <div class="col-6">
+                    <div>
+                      <label
+                        ><input type="radio" name="estrato" value="151.8" />Estrato
+                        4</label
+                      >
+                    </div>
+                    <div>
+                      <label
+                        ><input type="radio" name="estrato" value="117.7" />Estrato
+                        5</label
+                      >
+                    </div>
+                    <div>
+                      <label
+                        ><input type="radio" name="estrato" value="143.3" />Estrato
+                        6</label
+                      >
+                    </div>
+                  </div>
+                </div>
+                <div class="pregunta">
+                  <h4>¿Cuántas personas viven en tu casa?</h4>
+                </div>
+                <div class="respuestas">
+                  <div>
+                    <select name="personas-hogar" id="personas-hogar">
+                        <option selected value="0">Seleccione</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row slide-navigation">
+              <div class="footer-caminos">
+                <img src="img/logo-chevrolet.png" alt="" />
+              </div>
+              <div class="botones">
+                <!-- <div class="" data-current="2" data-previous="1">
+                    <button class="btn-anterior">
+                        <img src="img/left-icon.svg" alt="" />
+                        ANTERIOR
+                    </button>
+                  
+                </div> -->
+                
+                <div
+                  class="next text-end"
+                  data-current="2"
+                  data-next="3"
+                  data-question="question-1-2"
+                >
+                <button class="btn-siguiente">
+                    SIGUIENTE
+                    <img src="img/right-icon.svg" alt="" />
+                </button>
+                 
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- end slide 2 -->
+
+          <!-- Slide-3 MOVILIDAD-A -->
+          <div class="slide-3 slide" id="slide-3">
+            <div class="slide-info">
+              <div class="info-left">
+                <img
+                  class="logo-slide"
+                  src="img/movilidad.svg"
+                  alt=""
+                />
+                <h3 class="title-logo">MOVILIDAD</h3>
+              </div>
+              <div class="info-right">
+                <div class="pregunta">
+                  <h4>¿Qué medio de transporte utilizas usualmente?</h4>
+                </div>
+                <div class="row respuestas">
+                  <div class="col-6">
+                    <div>
+                      <label
+                        ><input
+                          type="radio"
+                          name="medio-transporte"
+                          value="carro"
+                        />Carro</label
+                      >
+                    </div>                    
+                    
+                    <div>
+                      <label
+                        ><input
+                          type="radio"
+                          name="medio-transporte"
+                          value="carro"
+                        />Carro híbrido</label
+                      >
+                    </div>
+                    <div>
+                      <label
+                        ><input
+                          type="radio"
+                          name="medio-transporte"
+                          value="publico"
+                        />Transporte publico</label
+                      >
+                    </div>
+                  </div>
+                  <div class="col-6">
+                    <div>
+                      <label
+                        ><input
+                          type="radio"
+                          name="medio-transporte"
+                          value="electrico"
+                        />Vehículo eléctrico</label
+                      >
+                    </div>
+                    <div>
+                      <label
+                        ><input
+                          type="radio"
+                          name="medio-transporte"
+                          value="moto"
+                        />Moto</label
+                      >
+                    </div>
+                    <div>
+                      <label
+                        ><input type="radio" name="medio-transporte" 
+                        value="otro" 
+                        />Otra forma</label
+                      >
+                    </div>
+                  </div>
+                </div>
+                
+              </div>
+            </div>
+            <div class="row slide-navigation">
+              <div class="footer-caminos">
+                <img src="img/logo-chevrolet.png" alt="" />
+              </div>
+              <div class="botones">
+                <div class="back" data-current="3" data-previous="2">
+                    <button class="btn-anterior">
+                        <img src="img/left-icon.svg" alt="" />
+                        ANTERIOR
+                    </button>
+                </div>
+                <div
+                  class="next text-end"
+                  data-current="3"
+                  data-next="4"
+                  data-question=""
+                >
+                <button class="btn-siguiente">
+                    SIGUIENTE
+                    <img src="img/right-icon.svg" alt="" />
+                </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- end slide-3 -->
+
+          <!-- Slide-4 MOVILIDA-B-->
+          <div class="slide-4 slide" id="slide-4">
+            <div class="slide-info">
+              <div class="info-left">
+                <img
+                  class="logo-slide"
+                  src="img/movilidad.svg"
+                  alt=""
+                  
+                />
+                <h3 class="title-logo">MOVILIDAD</h3>
+              </div>
+              <div class="info-right">
+                <div class="pregunta">
+                  <h4>
+                    ¿Compartes el vehículo (Carro o moto) con otras personas?
+                    (¿Te movilizas acompañado?)
+                  </h4>
+                </div>
+                <div class="row respuestas">
+                  <div class="col-6">
+                    <div>
+                      <label
+                        ><input
+                        checked
+                          type="radio"
+                          name="acompañantes"
+                          value="si"
+                        />SI</label
+                      >
+                    </div>
+                  
+                    <div>
+                      <label
+                        ><input
+                        checked
+                          type="radio"
+                          name="acompañantes"
+                          value="no"
+                        />NO</label
+                      >
+                    </div>
+                  </div>
+                </div>
+                <div class="pregunta">
+                  <h4>¿Con cuántas personas compartes el vehículo?</h4>
+                </div>
+                <div class="row respuestas">
+                  <div class="col">
+                    <div>
+                      <label>
+                        <select name="n-acompañantes" disabled="disabled" id="n-acompañantes">
+                          <option selected value="0">Seleccione</option>
+                          <option value="1">1</option>
+                          <option value="2">2</option>
+                          <option value="3">3</option>
+                          <option value="4">4</option>
+                          <option value="5">5</option>
+                          <option value="6">6</option>
+                      </select>
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row slide-navigation">
+              <div class="footer-caminos">
+                <img src="img/logo-chevrolet.png" alt="" />
+              </div>
+              <div class="botones">
+                <div class="back" data-current="4" data-previous="3">
+                    <button class="btn-anterior">
+                        <img src="img/left-icon.svg" alt="" />
+                        ANTERIOR
+                    </button>
+                </div>
+                <div
+                  class="next text-end"
+                  data-current="4"
+                  data-next="5"
+                  data-question=""
+                >
+                <button class="btn-siguiente">
+                    SIGUIENTE
+                    <img src="img/right-icon.svg" alt="" />
+                </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- end slide-4 -->
+
+          <!-- Slide-5 -->
+          <div class="slide-5 slide" id="slide-5">
+            <div class="slide-info">
+              <div class="info-left">
+                <img
+                  class="logo-slide"
+                  src="img/movilidad.svg"
+                  alt=""
+                 
+                />
+                <h3 class="title-logo">MOVILIDAD</h3>
+              </div>
+              <div class="info-right">
+                <div class="pregunta">
+                  <h4>
+                    Indique el combustible que consume su medio de transporte
+                  </h4>
+                </div>
+                <div class="row respuestas">
+                  <div class="col-6">
+                    <div>
+                      <label
+                        ><input
+                          type="radio"
+                          name="combustible"
+                          value="0"
+                        />Diésel</label
+                      >
+                    </div>
+                    <div>
+                      <label
+                        ><input type="radio" name="combustible" value="1" />Gas
+                        natural</label
+                      >
+                    </div>
+                    <div>
+                      <label
+                        ><input
+                          type="radio"
+                          name="combustible"
+                          value="2"
+                        />Gasolina</label
+                      >
+                    </div>
+                  </div>
+                </div>
+                <div class="pregunta">
+                  <h4>
+                    ¿Cuánto dinero estima que gastó en combustible mensualmente?
+                  </h4>
+                </div>
+                <div class="row respuestas">
+                    <div class="col">
+                      <div>
+                        <label
+                      
+                          >$ <input type="number" name="dinero-gasolina" id="dinero-gasolina" min="0"
+                          value="0" placeholder="0"
+                        /></label>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+            </div>
+            <div class="row slide-navigation">
+              <div class="footer-caminos">
+                <img src="img/logo-chevrolet.png" alt="" />
+              </div>
+              <div class="botones">
+                <div class="back" data-current="5" data-previous="4">
+                    <button class="btn-anterior">
+                        <img src="img/left-icon.svg" alt="" />
+                        ANTERIOR
+                    </button>
+                </div>
+                <div
+                  class="next text-end"
+                  data-current="5"
+                  data-next="6"
+                  data-question="question-movilidad"
+                >
+                <button class="btn-siguiente">
+                    SIGUIENTE
+                    <img src="img/right-icon.svg" alt="" />
+                </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- end slide-5 -->
+
+          <!-- Slide-6 INTERNACIONALES-->
+          <div class="slide-6 slide" id="slide-6">
+            <div class="slide-info">
+              <div class="info-left">
+                <img
+                  class="logo-slide"
+                  src="img/avion.svg"
+                  alt=""
+                />
+                <h3 class="title-logo">VIAJES EN AVIÓN</h3>
+              </div>
+              <div class="info-right">
+                <div class="pregunta">
+                  <h4>¿Con qué frecuencia viaja en avión <span style="color: #c6d900;">internacionalmente</span>?</h4>
+                </div>
+                <div class="row respuestas">
+                  <div class="col-md-12">
+                    <div>
+                      <label
+                        ><input
+                          type="radio"
+                          name="avion-internacional"
+                          value="10000"
+                        />Un vuelo al año (Ida y
+                        vuelta)
+                      </label>
+                    </div>
+                    <div>
+                      <label
+                        ><input
+                          type="radio"
+                          name="avion-internacional"
+                          value="20000"
+                        />Dos vuelos al año (Ida y
+                        vuelta)</label
+                      >
+                    </div>
+                    <div>
+                      <label
+                        ><input
+                          type="radio"
+                          name="avion-internacional"
+                          value=30000
+                        />Tres vuelos al año (Ida y
+                        vuelta)
+                      </label>
+                    </div>
+                    <div>
+                      <label
+                        ><input
+                          type="radio"
+                          name="avion-internacional"
+                          value="50000"
+                        />Cuatro vuelos o más al año (Ida y
+                        vuelta)</label
+                      >
+                    </div>
+                    <div>
+                        <label
+                          ><input
+                            type="radio"
+                            name="avion-internacional"
+                            value="0"
+                          />No suelo volar</label
+                        >
+                      </div>
+                  </div>
+                </div>
+               
+              </div>
+            </div>
+            <div class="row slide-navigation">
+              <div class="footer-caminos">
+                <img src="img/logo-chevrolet.png" alt="" />
+              </div>
+              <div class="botones">
+                <div class="back" data-current="6" data-previous="5">
+                    <button class="btn-anterior">
+                        <img src="img/left-icon.svg" alt="" />
+                        ANTERIOR
+                    </button>
+                </div>
+                <div
+                  class="next text-end"
+                  data-current="6"
+                  data-next="7"
+                  data-question="vuelos-internacional"
+                >
+                <button class="btn-siguiente">
+                    SIGUIENTE
+                    <img src="img/right-icon.svg" alt="" />
+                </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- end slide 6 -->
+          <!-- Slide-7 NACIONALES -->
+          <div class="slide-7 slide" id="slide-7">
+            <div class="slide-info">
+              <div class="info-left">
+                <img
+                  class="logo-slide"
+                  src="img/avion.svg"
+                  alt=""
+                 
+                />
+                <h3 class="title-logo">VIAJES EN AVIÓN</h3>
+              </div>
+              <div class="info-right">
+                <div class="pregunta">
+                    <h4>¿Con qué frecuencia viaja en avión <span style="color: #c6d900;">nacionalmente</span>?</h4>
+                </div>
+                <div class="row respuestas">
+                    <div class="col-md-12">
+                      <div>
+                        <label
+                          ><input
+                            type="radio"
+                            name="avion-nacional"
+                            value="1200"
+                          />Un vuelo al año (Ida y
+                          vuelta)
+                        </label>
+                    </div>
+                      <div>
+                        <label
+                          ><input
+                            type="radio"
+                            name="avion-nacional"
+                            value="2400"
+                          />Dos vuelos al año (Ida y
+                          vuelta)</label
+                        >
+                      </div>
+                      <div>
+                        <label
+                          ><input
+                            type="radio"
+                            name="avion-nacional"
+                            value="3600"
+                          />Tres vuelos al año (Ida y
+                          vuelta)
+                        </label>
+                      </div>
+                      <div>
+                        <label
+                          ><input
+                            type="radio"
+                            name="avion-nacional"
+                            value="6000"
+                          />Cuatro vuelos o más al año (Ida y
+                          vuelta)</label
+                        >
+                      </div>
+                      <div>
+                          <label
+                            ><input
+                              type="radio"
+                              name="avion-nacional"
+                              value="0"
+                            />No suelo volar</label
+                          >
+                        </div>
+                    </div>
+                  </div>
+              </div>
+            </div>
+            <div class="row slide-navigation">
+              <div class="footer-caminos">
+                <img src="img/logo-chevrolet.png" alt="" />
+              </div>
+              <div class="botones">
+                <div class="back" data-current="7" data-previous="6">
+                    <button class="btn-anterior">
+                        <img src="img/left-icon.svg" alt="" />
+                        ANTERIOR
+                    </button>
+                </div>
+                <div
+                  class="next text-end"
+                  data-current="7"
+                  data-next="8"
+                  data-question="vuelos-nacionales"
+                >
+                <button class="btn-siguiente">
+                    SIGUIENTE
+                    <img src="img/right-icon.svg" alt="" />
+                </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- end slide 7 -->
+
+          <!-- Slide-8 PROTEINA -->
+          <div class="slide-8 slide" id="slide-8">
+            <div class="slide-info">
+              <div class="info-left">
+                <img class="logo-slide" src="img/proteina.svg" alt="" />
+                <h3 class="title-logo">CONSUMO DE PROTEÍNA</h3>
+              </div>
+              <div class="info-right">
+                <div class="pregunta">
+                  <h4>¿Con qué frecuencia come proteína animal?</h4>
+                </div>
+                <div class="row respuestas">
+                  <table style="color: #c6d900" class="table">
+                    <thead  >
+                      <tr>
+                        <th scope="col"></th>
+                        <th scope="col">Diario</th>
+                        <th scope="col">4-6 días/sem.</th>
+                        <th scope="col">1-3 días/sem.</th>
+                        <th scope="col">No consumo</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row">Res</th>
+                        <td><input type="radio" name="res" value="33.01" /></td>
+                        <td><input type="radio" name="res" value="23.58" /></td>
+                        <td><input type="radio" name="res" value="9.43" /></td>
+                        <td><input type="radio" name="res" value="0" /></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Pollo</th>
+                        <td><input type="radio" name="pollo" value="6.63" /></td>
+                        <td><input type="radio" name="pollo" value="4.73" /></td>
+                        <td><input type="radio" name="pollo" value="1.89" /></td>
+                        <td><input type="radio" name="pollo" value="0" /></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Cerdo</th>
+                        <td><input type="radio" name="cerdo" value="2.88" /></td>
+                        <td><input type="radio" name="cerdo" value="2.06" /></td>
+                        <td><input type="radio" name="cerdo" value="0.82" /></td>
+                        <td><input type="radio" name="cerdo" value="0" /></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Pescado</th>
+                        <td><input type="radio" name="pescado" value="2.30" /></td>
+                        <td><input type="radio" name="pescado" value="1.64" /></td>
+                        <td><input type="radio" name="pescado" value="0.66" /></td>
+                        <td><input type="radio" name="pescado" value="0" /></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+            <div class="row slide-navigation">
+              <div class="footer-caminos">
+                <img src="img/logo-chevrolet.png" alt="" />
+              </div>
+              <div class="botones">
+                <div class="back" data-current="8" data-previous="7">
+                    <button class="btn-anterior">
+                        <img src="img/left-icon.svg" alt="" />
+                        ANTERIOR
+                    </button>
+                </div>
+                <div
+                  class="next text-end"
+                  data-current="8"
+                  data-next="9"
+                  data-question="question-proteina"
+                >
+                <button class="btn-siguiente">
+                    SIGUIENTE
+                    <img src="img/right-icon.svg" alt="" />
+                </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- end slide 8 -->
+
+          <!-- Slide-9 RESIDUOS-->
+          <div class="slide-9 slide" id="slide-9">
+            <div class="slide-info">
+              <div class="info-left">
+                <img class="logo-slide" src="img/residuos.svg" alt="" />
+                <h3 class="title-logo">RESIDUOS SOLIDOS</h3>
+              </div>
+              <div class="info-right">
+                <div class="pregunta">
+                  <h4>
+                    ¿Usted bota a la basura los aparatos electrónicos que ya no
+                    usa? (Celulares, computadores y sus partes, electrodomésticos, etc.)
+                  </h4>
+                </div>
+                <div class="row respuestas">
+                  <div class="col-6">
+                    <div>
+                      <label
+                        ><input type="radio" name="residuos" value="0.146"/>SI</label
+                      >
+                    </div>
+                    <div>
+                      <label
+                        ><input type="radio" name="residuos" value="-6.205"/>NO</label
+                      >
+                    </div>
+                  </div>
+                
+                </div>
+              </div>
+            </div>
+            <div class="row slide-navigation">
+              <div class="footer-caminos">
+                <img src="img/logo-chevrolet.png" alt="" />
+              </div>
+              <div class="botones">
+                <div class="back" data-current="9" data-previous="8">
+                    <button class="btn-anterior">
+                        <img src="img/left-icon.svg" alt="" />
+                        ANTERIOR
+                    </button>
+                </div>
+                <div
+                  class="next text-end"
+                  data-current="9"
+                  data-next="10"
+                  data-question="question-residuos"
+                >
+                <button class="btn-siguiente">
+                RESULTADOS
+                    <img src="img/right-icon.svg" alt="" />
+                </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- end slide 9 -->
+
+          <!-- Slide-10 RESULTADOS -->
+          <div class="slide-10 slide" id="slide-10">
+            <div class="slide-info-resultado">
+              <div class="cont-termo ">
+                <img class="img-termo" src="img/termometro.png" alt="" />
+                <img class="img-line" src="img/linea.png" alt="" />
+              </div>
+              <div class="info-resultado">
+<!--                 <h2 style="color: #c6d900">RESULTADOS</h2>-->                <p>
+                  Tu consumo es de
+                  <span
+                    style="color: #c6d900; font-size: 1.5em"
+                    id="cantidad-co2"
+                    ></span
+                  >
+                  toneladas de <span style="color: #c6d900; font-size: 1.5em">CO<sub>2</sub> al año</span>
+
+                  <br />
+                  Esto es equivalente a cortar aproximadamente
+                  <span
+                    style="color: #c6d900; font-size: 1.5em"
+                    id="cantidad-arboles"
+                    >xx</span
+                  >
+                  árboles al año. <br />
+                 
+                </p>
+                <p> <span id="mensaje"> Aunque te preocupas por el medio ambiente, debes mejorar tus hábitos, ser consiente es el primer paso.</span></p>
+              </div>
+            </div>
+            <div class="row slide-navigation">
+                <div class="ancla">
+                    <button id="siguiente-paso">
+                        <a>REGISTRARME</a>
+                    </button>
+                </div>
+                  
+              </div>
+            </div>
+          </div>
+          <!-- end slide 10-->
+        </div>
+      </div>
+    </div>
+    <!-- <div class="container-fluid" id="video" >
+        <video preload autoplay loop poster="./img/video.png">
+            <source src="./bg-video.mp4">
+        </video>
+    </div> -->
+    <div class="container-fluid" id="contacto">
+      <div id="overlay">
+      </div>
+      <div class="info-contacto">
+        <div class="cont-left">
+          <div>
+            <p class="p1">
+              <span style="color: #c6d900;">En Caminos nos hemos propuesto ser huella de carbono neutro para el 2025,</span> por eso producimos con paneles solares el <span style="color: #c6d900;">73% de la energía que consumimos</span>.
+            </p>
+            <p>
+              <span style="color: #c6d900;">Usamos las aguas lluvias</span> para nuestra operación, ademas contamos con <span style="color: #c6d900;">arquitectura bioclimática</span> y reciclamos <span style="color: #c6d900;">nuestros desechos aprovechables realizando economía circular, esto nos permite ser los aliados</span>
+              sostenibles Renting Colombia y Taller Oro Cesvi.</p>
+            <p>
+              Actuemos juntos y reforestemos en la primera Travesía Carbono Neutro.
+            </p>
+          </div>
+
+          <div>
+            <form id="form-contacto" method="POST">
+              <input type="hidden" name="resultado_huella" id="resultado_huella">
+              <input type="hidden" name="resultado_arboles" id="resultado_arboles">
+              <div class="form-item">
+                <label for="nombre">NOMBRE:</label>
+                <input type="text" name="nombre" id="" />
+              </div>
+              <div class="form-item">
+                <label for="telefono">TELÉFONO:</label>
+                <input type="text" name="telefono" id="" />
+              </div>
+              <div class="form-item">
+                <label for="correo">CORREO:</label>
+                <input type="email" name="correo" id="" />
+              </div>
+              <div class="form-item">
+                <label for="edad">EDAD:</label>
+                <input type="number" min="0" name="edad" id="" />
+              </div>
+             
+            </form>
+            <div class="btn-form" id="btn-enviar"> 
+              <button onclick="enviar()">ENVIAR</button>
+          </div>
+          </div>
+          <div class="mensaje">
+            <p>Tu datos se han enviado correctamente, pronto nos pondremos en contacto para darte indicaciones sobre la travesía carbono cero</p>
+          </div>
+        </div>
+        <div class="cont-rigth">
+          <div class="sub-logo-link">
+            <div class="carbono-neutro">
+              <img id="modalS" src="img/logo-carbono-neutro.png" alt="">
+          </div>
+          <div class="link-youtube">
+            <div class="text-youtube">
+              <h5>CONOCE MÁS DE NUESTRAS ACCIONES AQUÍ</h5>
+            </div>
+            <div class="icono-youtube">
+              <a href="">
+                <img src="img/icono-youtube.png" alt="">
+              </a>
+            </div>
+          </div>
+          </div>
+           <div class="sub-iniciativas">
+            <div class="iniciativa">
+              <div class="iniciativa-titulo">
+                <h5>UNA CAMPAÑA</h5>
+              </div>
+              <div class="iniciativa-logo">    
+                <img class="img-chevrolet" src="img/logo-chevrolet.png" alt="">
+            </div>
+            </div>
+            <div class="iniciativa">
+              <div class="iniciativa-titulo">
+                <h5>RESPALDA</h5>
+              </div>
+              <div class="iniciativa-logo">
+                <div class="respaldo-grid">
+                  <img class="img-certi" src="img/logo-certificado.png" alt="">
+                  <img class="img-huella" src="img/logo-huella.png" alt="">
+
+                </div>
+            </div>
+            </div>
+           </div>
+           
+        </div>
+      </div>
+       
+    </div>
+
+    <!-- insertar bootstrap JS -->
+    <script src="./js/popper.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <!-- JQUERY -->
+    <script src="./jquery.min.js"></script>
+    <!--MAIN-->
+    <script src="./js/app.js"></script>
+  </body>
+</html>
